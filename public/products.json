@@ -1,0 +1,974 @@
+[
+        {
+        "id": "duo",
+        "name": "Duo",
+        "collection": "indoor",
+        "category": "beds",
+        "categoryLabel": {
+            "en": "Beds",
+            "ru": "Кровати"
+        },
+        "featured": true,
+        "new": true,
+        "year": "2026",
+        "description": {
+            "en": "This bed embodies elegant functionality and modern style. The minimalist design with a soft headboard and refined upholstery ensures exceptional comfort and durability, adding an exquisite atmosphere to your bedroom.",
+            "ru": "Эта кровать сочетает в себе элегантную функциональность и современный стиль. Минималистичный дизайн с мягким изголовьем и изысканной обивкой обеспечивает исключительный комфорт и долговечность, придавая вашей спальне особую атмосферу."
+        },
+
+        "mainImage": "/img/products/duo/Duo-01.jpg",
+
+        "images": [
+            "/img/products/duo/Duo-01.jpg",
+            "/img/products/duo/Duo-02.jpg",
+            "/img/products/duo/Duo-03.jpg",
+            "/img/products/duo/Duo-04.jpg"
+        ],
+
+        "dimensionsImages": [
+            "/img/products/duo/Duo-dimension-front.jpg",
+            "/img/products/duo/Duo-dimension-side.jpg",
+            "/img/products/duo/Duo-dimension-top.jpg"
+        ],
+
+        "dimensionsDetails": {
+            "layout": "grid", "details": [
+            {
+                "icon": "/img/products/duo/details/frame-icon.svg",
+                "image": "/img/products/duo/details/frame.jpg",
+                "title": {
+                    "en": "Hidden metal frame",
+                    "ru": "Скрытый металлокаркас"
+                },
+                "description": {
+                    "en": "The base is made of a durable 60×40 profile pipe with high‑quality protective powder coating.",
+                    "ru": "Основа из прочной профильной трубы 60×40 с качественной защитной порошковой покраской."
+                }
+            },
+            {
+                "icon": "/img/products/duo/details/eco_material-icon.svg",
+                "image": "/img/products/duo/details/eco_material.jpg",
+                "title": {
+                    "en": "Eco‑materials",
+                    "ru": "Эко-материалы"
+                },
+                "description": {
+                    "en": "The use of certified plywood.",
+                    "ru": "Использование сертифицированной фанеры."
+                }
+            },
+            {
+                "icon": "/img/products/duo/details/mattress-icon.svg",
+                "image": "/img/products/duo/details/mattress.jpg",
+                "title": {
+                    "en": "Taking care of the mattress",
+                    "ru": "Забота о матрасе"
+                },
+                "description": {
+                    "en": "To ensure the mattress retains its properties, a reinforced base made of MDF board is used on top of a metal frame.",
+                    "ru": "Чтобы матрас сохранял свои свойства, используется усиленное основание из МДФ-щита поверх металлокаркаса."
+                }
+            },
+            {
+                "icon": "/img/products/duo/details/lameli_dim-icon.svg",
+                "image": "/img/products/duo/details/lameli_dim.jpg",
+                "title": {
+                    "en": "Reliability",
+                    "ru": "Надёжность"
+                },
+                "description": {
+                    "en": "The distance between the plywood slats is no more than 5 cm.",
+                    "ru": "Расстояние между фанерными ламелями не более 5см."
+                }
+            }
+        ]
+        },
+
+        "add_description": {            
+            "items": { 
+                "en": ["- At the customer’s request, this model can be manufactured with a removable cover on the legs for easy maintenance and to update the appearance.",
+                "- Two types of bases are available for selection: with classic slats and a solid panel base."
+                ],
+            
+                "ru": ["- По желанию заказчика данная модель может изготавливаться со съёмным чехлом на царгах для лёгкого ухода и обновления внешнего вида.",
+                "- На выбор предлагается два вида основания: с классическими ламелями и сплошное щитовое основание."
+                ]
+            }
+        },
+
+        "gallery": [
+            "/img/products/duo/gallery/Duo-gallery-01.jpg",
+            "/img/products/duo/gallery/Duo-gallery-02.jpg",
+            "/img/products/duo/gallery/Duo-gallery-03.jpg",
+            "/img/products/duo/gallery/Duo-gallery-04.jpg",
+            "/img/products/duo/gallery/Duo-gallery-05.jpg",
+            "/img/products/duo/gallery/Duo-gallery-06.jpg"
+        ]
+      
+    },
+
+    {
+        "id": "elora",
+        "name": "Elora",
+        "collection": "indoor",
+        "category": "beds",
+        "categoryLabel": {
+            "en": "Beds",
+            "ru": "Кровати"
+        },
+        "featured": true,
+        "new": true,
+        "year": "2026",
+        "description": {
+            "en": "This bed combines thoughtful construction and minimalist design, providing exceptional comfort and durability, as well as timeless aesthetics.",
+            "ru": "Эта кровать сочетает в себе продуманную конструкцию и минималистичный дизайн, обеспечивая исключительный комфорт и долговечность, а также вневременную эстетику."
+        },
+
+        "mainImage": "/img/products/elora/Elora-01.jpg",
+
+        "images": [
+            "/img/products/elora/Elora-01.jpg",
+            "/img/products/elora/Elora-02.jpg",
+            "/img/products/elora/Elora-03.jpg",
+            "/img/products/elora/Elora-04.jpg"
+        ],
+
+        "dimensionsImages": [
+            "/img/products/elora/Elora-dimension-front.jpg",
+            "/img/products/elora/Elora-dimension-side.jpg",
+            "/img/products/elora/Elora-dimension-top.jpg"
+        ],
+
+        "dimensionsDetails": {
+            "layout": "grid", "details": [
+            {
+                "icon": "/img/products/elora/details/frame-icon.svg",
+                "image": "/img/products/elora/details/frame.jpg",
+                "title": {
+                    "en": "Hidden metal frame",
+                    "ru": "Скрытый металлокаркас"
+                },
+                "description": {
+                    "en": "The base is made of a durable 60×40 profile pipe with high‑quality protective powder coating.",
+                    "ru": "Основа из прочной профильной трубы 60×40 с качественной защитной порошковой покраской."
+                }
+            },
+            {
+                "icon": "/img/products/elora/details/eco_material-icon.svg",
+                "image": "/img/products/elora/details/eco_material.jpg",
+                "title": {
+                    "en": "Eco‑materials",
+                    "ru": "Эко-материалы"
+                },
+                "description": {
+                    "en": "The use of certified plywood.",
+                    "ru": "Использование сертифицированной фанеры."
+                }
+            },
+            {
+                "icon": "/img/products/elora/details/mattress-icon.svg",
+                "image": "/img/products/elora/details/mattress.jpg",
+                "title": {
+                    "en": "Taking care of the mattress",
+                    "ru": "Забота о матрасе"
+                },
+                "description": {
+                    "en": "To ensure the mattress retains its properties, a reinforced base made of MDF board is used on top of a metal frame.",
+                    "ru": "Чтобы матрас сохранял свои свойства, используется усиленное основание из МДФ-щита поверх металлокаркаса."
+                }
+            },
+            {
+                "icon": "/img/products/elora/details/lameli_dim-icon.svg",
+                "image": "/img/products/elora/details/lameli_dim.jpg",
+                "title": {
+                    "en": "Reliability",
+                    "ru": "Надёжность"
+                },
+                "description": {
+                    "en": "The distance between the plywood slats is no more than 5 cm.",
+                    "ru": "Расстояние между фанерными ламелями не более 5см."
+                }
+            }
+        ]
+        },
+
+        "add_description": {            
+            "items": { 
+                "en": ["- At the customer’s request, this model can be manufactured with a removable cover on the legs for easy maintenance and to update the appearance.",
+                "- Two types of bases are available for selection: with classic slats and a solid panel base."
+                ],
+            
+                "ru": ["- По желанию заказчика данная модель может изготавливаться со съёмным чехлом на царгах для лёгкого ухода и обновления внешнего вида.",
+                "- На выбор предлагается два вида основания: с классическими ламелями и сплошное щитовое основание."
+                ]
+            }
+        },
+
+        "gallery": [
+            "/img/products/elora/gallery/Elora-gallery-01.jpg",
+            "/img/products/elora/gallery/Elora-gallery-02.jpg",
+            "/img/products/elora/gallery/Elora-gallery-03.jpg",
+            "/img/products/elora/gallery/Elora-gallery-04.jpg",
+            "/img/products/elora/gallery/Elora-gallery-05.jpg",
+            "/img/products/elora/gallery/Elora-gallery-06.jpg"
+        ]
+      
+    },
+
+    {
+        "id": "soffi",
+        "name": "Soffi",
+        "collection": "indoor",
+        "category": "beds",
+        "categoryLabel": {
+            "en": "Beds",
+            "ru": "Кровати"
+        },
+        "featured": true,
+        "new": true,
+        "year": "2026",
+        "description": {
+            "en": "This bed embodies elegant functionality and modern style. The minimalistic design with upholstered headboard and thin upholstery ensures exceptional comfort and durability, adding a sophisticated atmosphere to your bedroom.",
+            "ru": "Эта кровать сочетает в себе элегантность, функциональность и современный стиль. Минималистичный дизайн с мягким изголовьем и тонкой обивкой обеспечивает исключительный комфорт и долговечность, придавая вашей спальне изысканный вид."
+        },
+
+        "mainImage": "/img/products/soffi/Soffi-01.jpg",
+
+        "images": [
+            "/img/products/soffi/Soffi-01.jpg",
+            "/img/products/soffi/Soffi-02.jpg",
+            "/img/products/soffi/Soffi-03.jpg",
+            "/img/products/soffi/Soffi-04.jpg"
+        ],
+
+        "dimensionsImages": [
+            "/img/products/soffi/Soffi-dimension-front.jpg",
+            "/img/products/soffi/Soffi-dimension-side.jpg",
+            "/img/products/soffi/Soffi-dimension-top.jpg"
+        ],
+
+        "dimensionsDetails": {
+            "layout": "grid", "details": [
+            {
+                "icon": "/img/products/soffi/details/frame-icon.svg",
+                "image": "/img/products/soffi/details/frame.jpg",
+                "title": {
+                    "en": "Hidden metal frame",
+                    "ru": "Скрытый металлокаркас"
+                },
+                "description": {
+                    "en": "The base is made of a durable 60×40 profile pipe with high‑quality protective powder coating.",
+                    "ru": "Основа из прочной профильной трубы 60×40 с качественной защитной порошковой покраской."
+                }
+            },
+            {
+                "icon": "/img/products/soffi/details/eco_material-icon.svg",
+                "image": "/img/products/soffi/details/eco_material.jpg",
+                "title": {
+                    "en": "Eco‑materials",
+                    "ru": "Эко-материалы"
+                },
+                "description": {
+                    "en": "The use of certified plywood.",
+                    "ru": "Использование сертифицированной фанеры."
+                }
+            },
+            {
+                "icon": "/img/products/duo/details/mattress-icon.svg",
+                "image": "/img/products/duo/details/mattress.jpg",
+                "title": {
+                    "en": "Taking care of the mattress",
+                    "ru": "Забота о матрасе"
+                },
+                "description": {
+                    "en": "To ensure the mattress retains its properties, a reinforced base made of MDF board is used on top of a metal frame.",
+                    "ru": "Чтобы матрас сохранял свои свойства, используется усиленное основание из МДФ-щита поверх металлокаркаса."
+                }
+            },
+            {
+                "icon": "/img/products/soffi/details/lameli_dim-icon.svg",
+                "image": "/img/products/soffi/details/lameli_dim.jpg",
+                "title": {
+                    "en": "Reliability",
+                    "ru": "Надёжность"
+                },
+                "description": {
+                    "en": "The distance between the plywood slats is no more than 5 cm.",
+                    "ru": "Расстояние между фанерными ламелями не более 5см."
+                }
+            }
+        ]
+        },
+
+        "add_description": {            
+            "items": { 
+                "en": ["- At the customer’s request, this model can be manufactured with a removable cover on the legs for easy maintenance and to update the appearance.",
+                "- Two types of bases are available for selection: with classic slats and a solid panel base."
+                ],
+            
+                "ru": ["- По желанию заказчика данная модель может изготавливаться со съёмным чехлом на царгах для лёгкого ухода и обновления внешнего вида.",
+                "- На выбор предлагается два вида основания: с классическими ламелями и сплошное щитовое основание."
+                ]
+            }
+        },
+
+        "gallery": [
+            "/img/products/soffi/gallery/Soffi-gallery-01.jpg",
+            "/img/products/soffi/gallery/Soffi-gallery-02.jpg",
+            "/img/products/soffi/gallery/Soffi-gallery-03.jpg",
+            "/img/products/soffi/gallery/Soffi-gallery-04.jpg",
+            "/img/products/soffi/gallery/Soffi-gallery-05.jpg",
+            "/img/products/soffi/gallery/Soffi-gallery-06.jpg"
+        ]
+      
+    },
+
+    {
+        "id": "cloud",
+        "name": "Cloud",
+        "collection": "indoor",
+        "category": "beds",
+        "categoryLabel": {
+            "en": "Beds",
+            "ru": "Кровати"
+        },
+        "featured": true,
+        "new": true,
+        "year": "2026",
+        "description": {
+            "en": "This bed embodies elegant functionality and modern style. The minimalistic design with upholstered headboard and thin upholstery ensures exceptional comfort and durability, adding a sophisticated atmosphere to your bedroom.",
+            "ru": "Эта кровать сочетает в себе элегантность, функциональность и современный стиль. Минималистичный дизайн с мягким изголовьем и тонкой обивкой обеспечивает исключительный комфорт и долговечность, придавая вашей спальне изысканный вид."
+        },
+
+        "mainImage": "/img/products/cloud/Cloud-01.jpg",
+
+        "images": [
+            "/img/products/cloud/Cloud-01.jpg",
+            "/img/products/cloud/Cloud-02.jpg"
+        ],
+
+        "dimensionsImages": [
+            "/img/products/cloud/Cloud-dimension-front.jpg",
+            "/img/products/cloud/Cloud-dimension-side.jpg",
+            "/img/products/cloud/Cloud-dimension-top.jpg"
+        ],
+
+        "dimensionsDetails": {
+            "layout": "grid", "details": [
+            {
+                "icon": "/img/products/cloud/details/frame-icon.svg",
+                "image": "/img/products/cloud/details/frame.jpg",
+                "title": {
+                    "en": "Hidden metal frame",
+                    "ru": "Скрытый металлокаркас"
+                },
+                "description": {
+                    "en": "The base is made of a durable 60×40 profile pipe with high‑quality protective powder coating.",
+                    "ru": "Основа из прочной профильной трубы 60×40 с качественной защитной порошковой покраской."
+                }
+            },
+            {
+                "icon": "/img/products/cloud/details/eco_material-icon.svg",
+                "image": "/img/products/cloud/details/eco_material.jpg",
+                "title": {
+                    "en": "Eco‑materials",
+                    "ru": "Эко-материалы"
+                },
+                "description": {
+                    "en": "The use of certified plywood.",
+                    "ru": "Использование сертифицированной фанеры."
+                }
+            },
+            {
+                "icon": "/img/products/cloud/details/mattress-icon.svg",
+                "image": "/img/products/cloud/details/mattress.jpg",
+                "title": {
+                    "en": "Taking care of the mattress",
+                    "ru": "Забота о матрасе"
+                },
+                "description": {
+                    "en": "To ensure the mattress retains its properties, a reinforced base made of MDF board is used on top of a metal frame.",
+                    "ru": "Чтобы матрас сохранял свои свойства, используется усиленное основание из МДФ-щита поверх металлокаркаса."
+                }
+            },
+            {
+                "icon": "/img/products/cloud/details/lameli_dim-icon.svg",
+                "image": "/img/products/cloud/details/lameli_dim.jpg",
+                "title": {
+                    "en": "Reliability",
+                    "ru": "Надёжность"
+                },
+                "description": {
+                    "en": "The distance between the plywood slats is no more than 5 cm.",
+                    "ru": "Расстояние между фанерными ламелями не более 5см."
+                }
+            }
+        ]
+        },
+
+        "add_description": {            
+            "items": { 
+                "en": ["- At the customer’s request, this model can be manufactured with a removable cover on the legs for easy maintenance and to update the appearance.",
+                "- Two types of bases are available for selection: with classic slats and a solid panel base."
+                ],
+            
+                "ru": ["- По желанию заказчика данная модель может изготавливаться со съёмным чехлом на царгах для лёгкого ухода и обновления внешнего вида.",
+                "- На выбор предлагается два вида основания: с классическими ламелями и сплошное щитовое основание."
+                ]
+            }
+        },
+
+        "gallery": [
+            "/img/products/cloud/gallery/Cloud-gallery-01.jpg",
+            "/img/products/cloud/gallery/Cloud-gallery-02.jpg",
+            "/img/products/cloud/gallery/Cloud-gallery-03.jpg",
+            "/img/products/cloud/gallery/Cloud-gallery-04.jpg",
+            "/img/products/cloud/gallery/Cloud-gallery-05.jpg",
+            "/img/products/cloud/gallery/Cloud-gallery-06.jpg"
+        ]
+      
+    },
+
+    {
+        "id": "melange",
+        "name": "Melange",
+        "collection": "indoor",
+        "category": "beds",
+        "categoryLabel": {
+            "en": "Beds",
+            "ru": "Кровати"
+        },
+        "featured": true,
+        "new": true,
+        "year": "2026",
+        "description": {
+            "en": "The bed from the MELANGE collection is designed for those who are looking for balance. between modern architectural rigor and absolute tactile comfort.",
+            "ru": "Кровать из коллекции MELANGE создана для тех, кто ищет баланс между современной архитектурной строгостью и абсолютным тактильным комфортом."
+        },
+
+        "mainImage": "/img/products/melange/Melange-01.jpg",
+
+        "images": [
+            "/img/products/melange/Melange-01.jpg",
+            "/img/products/melange/Melange-02.jpg"
+        ],
+
+        "dimensionsImages": [
+            "/img/products/melange/Melange-dimension-front.jpg",
+            "/img/products/melange/Melange-dimension-side.jpg",
+            "/img/products/melange/Melange-dimension-top.jpg"
+        ],
+
+        "dimensionsDetails": {
+            "layout": "grid", "details": [
+            {
+                "icon": "/img/products/cloud/details/frame-icon.svg",
+                "image": "/img/products/cloud/details/frame.jpg",
+                "title": {
+                    "en": "Hidden metal frame",
+                    "ru": "Скрытый металлокаркас"
+                },
+                "description": {
+                    "en": "The base is made of a durable 60×40 profile pipe with high‑quality protective powder coating.",
+                    "ru": "Основа из прочной профильной трубы 60×40 с качественной защитной порошковой покраской."
+                }
+            },
+            {
+                "icon": "/img/products/cloud/details/eco_material-icon.svg",
+                "image": "/img/products/cloud/details/eco_material.jpg",
+                "title": {
+                    "en": "Eco‑materials",
+                    "ru": "Эко-материалы"
+                },
+                "description": {
+                    "en": "The use of certified plywood.",
+                    "ru": "Использование сертифицированной фанеры."
+                }
+            },
+            {
+                "icon": "/img/products/cloud/details/mattress-icon.svg",
+                "image": "/img/products/cloud/details/mattress.jpg",
+                "title": {
+                    "en": "Taking care of the mattress",
+                    "ru": "Забота о матрасе"
+                },
+                "description": {
+                    "en": "To ensure the mattress retains its properties, a reinforced base made of MDF board is used on top of a metal frame.",
+                    "ru": "Чтобы матрас сохранял свои свойства, используется усиленное основание из МДФ-щита поверх металлокаркаса."
+                }
+            },
+            {
+                "icon": "/img/products/cloud/details/lameli_dim-icon.svg",
+                "image": "/img/products/cloud/details/lameli_dim.jpg",
+                "title": {
+                    "en": "Reliability",
+                    "ru": "Надёжность"
+                },
+                "description": {
+                    "en": "The distance between the plywood slats is no more than 5 cm.",
+                    "ru": "Расстояние между фанерными ламелями не более 5см."
+                }
+            }
+        ]
+        },
+
+        "add_description": {            
+            "items": { 
+                "en": ["- At the customer’s request, this model can be manufactured with a removable cover on the legs for easy maintenance and to update the appearance.",
+                "- Two types of bases are available for selection: with classic slats and a solid panel base."
+                ],
+            
+                "ru": ["- По желанию заказчика данная модель может изготавливаться со съёмным чехлом на царгах для лёгкого ухода и обновления внешнего вида.",
+                "- На выбор предлагается два вида основания: с классическими ламелями и сплошное щитовое основание."
+                ]
+            }
+        },
+
+        "gallery": [
+            "/img/products/melange/gallery/Melange-gallery-01.jpg",
+            "/img/products/melange/gallery/Melange-gallery-02.jpg",
+            "/img/products/melange/gallery/Melange-gallery-03.jpg",
+            "/img/products/melange/gallery/Melange-gallery-04.jpg",
+            "/img/products/melange/gallery/Melange-gallery-05.jpg",
+            "/img/products/melange/gallery/Melange-gallery-06.jpg"
+        ]
+      
+    },
+
+    {
+        "id": "lona",
+        "name": "Lona",
+        "collection": "indoor",
+        "category": "beds",
+        "categoryLabel": {
+            "en": "Beds",
+            "ru": "Кровати"
+        },
+        "featured": true,
+        "new": true,
+        "year": "2026",
+        "description": {
+            "en": "This bed embodies elegant functionality and modern style. The minimalistic design with upholstered headboard and thin upholstery ensures exceptional comfort and durability, adding a sophisticated atmosphere to your bedroom.",
+            "ru": "Эта кровать сочетает в себе элегантность, функциональность и современный стиль. Минималистичный дизайн с мягким изголовьем и тонкой обивкой обеспечивает исключительный комфорт и долговечность, придавая вашей спальне изысканный вид."
+        },
+
+        "mainImage": "/img/products/lona/Lona-01.jpg",
+
+        "images": [
+            "/img/products/lona/Lona-01.jpg",
+            "/img/products/lona/Lona-02.jpg"
+        ],
+
+        "dimensionsImages": [
+            "/img/products/lona/Lona-dimension-front.jpg",
+            "/img/products/lona/Lona-dimension-side.jpg",
+            "/img/products/lona/Lona-dimension-top.jpg"
+        ],
+
+        "dimensionsDetails": {
+            "layout": "single", "details": [
+            {
+                "image": "/img/products/lona/details/Lona-cut.jpg"
+            }            
+        ]
+        },
+
+        "add_description": {            
+            "items": { 
+                "en": ["- Two types of bases are available: with classic slats and a solid panel base."
+                ],
+            
+                "ru": ["- На выбор предлагается два вида основания: с классическими ламелями и сплошное щитовое основание."
+                ]
+            }
+        },
+
+        "gallery": [
+            "/img/products/lona/gallery/Lona-gallery-01.jpg",
+            "/img/products/lona/gallery/Lona-gallery-02.jpg",
+            "/img/products/lona/gallery/Lona-gallery-03.jpg",
+            "/img/products/lona/gallery/Lona-gallery-04.jpg",
+            "/img/products/lona/gallery/Lona-gallery-05.jpg",
+            "/img/products/lona/gallery/Lona-gallery-06.jpg"
+        ]
+      
+    },
+
+    {
+        "id": "twins",
+        "name": "Twins",
+        "collection": "indoor",
+        "category": "beds",
+        "categoryLabel": {
+            "en": "Beds",
+            "ru": "Кровати"
+        },
+        "featured": true,
+        "new": true,
+        "year": "2026",
+        "description": {
+            "en": "This bed combines soft architectonic shapes, filling the bedroom with an atmosphere of visual warmth, absolute comfort and timeless elegance.",
+            "ru": "Эта кровать сочетает в себе мягкие архитектурные формы, наполняющие спальню атмосферой визуального тепла, абсолютного комфорта и неподвластной времени элегантности."
+        },
+
+        "mainImage": "/img/products/twins/Twins-01.jpg",
+
+        "images": [
+            "/img/products/twins/Twins-01.jpg",
+            "/img/products/twins/Twins-02.jpg",
+            "/img/products/twins/Twins-03.jpg"
+        ],
+
+        "dimensionsImages": [
+            "/img/products/twins/Twins-dimension-front.jpg",
+            "/img/products/twins/Twins-dimension-side.jpg",
+            "/img/products/twins/Twins-dimension-top.jpg"
+        ],
+
+        "dimensionsDetails": {
+            "layout": "single", "details": [
+            {
+                "image": "/img/products/twins/details/Twins-cut.jpg"
+            }            
+        ]
+        },
+
+        "add_description": {            
+            "items": { 
+                "en": ["- Two types of bases are available: with classic slats and a solid panel base."
+                ],
+            
+                "ru": ["- На выбор предлагается два вида основания: с классическими ламелями и сплошное щитовое основание."
+                ]
+            }
+        },
+
+        "gallery": [
+            "/img/products/twins/gallery/Twins-gallery-01.jpg",
+            "/img/products/twins/gallery/Twins-gallery-02.jpg",
+            "/img/products/twins/gallery/Twins-gallery-03.jpg",
+            "/img/products/twins/gallery/Twins-gallery-04.jpg",
+            "/img/products/twins/gallery/Twins-gallery-05.jpg",
+            "/img/products/twins/gallery/Twins-gallery-06.jpg"
+        ]
+      
+    },
+
+    {
+        "id": "puffi",
+        "name": "Puffi",
+        "collection": "indoor",
+        "category": "beds",
+        "categoryLabel": {
+            "en": "Beds",
+            "ru": "Кровати"
+        },
+        "featured": true,
+        "new": true,
+        "year": "2026",
+        "description": {
+            "en": "This bed embodies the aesthetics of Italian minimalism. Expressive three-dimensional stitching and soft enveloping silhouette create a feeling of complete comfort, turning the bedroom into a space. have an exquisite vacation.",
+            "ru": "Эта кровать воплощает эстетику итальянского минимализма. Выразительная объемная прострочка и мягкий обволакивающий силуэт создают ощущение полного комфорта, превращая спальню в пространство для изысканного отдыха."
+        },
+
+        "mainImage": "/img/products/puffi/Puffi-01.jpg",
+
+        "images": [
+            "/img/products/puffi/Puffi-01.jpg",
+            "/img/products/puffi/Puffi-02.jpg"
+        ],
+
+        "dimensionsImages": [
+            "/img/products/puffi/Puffi-dimension-front.jpg",
+            "/img/products/puffi/Puffi-dimension-side.jpg",
+            "/img/products/puffi/Puffi-dimension-top.jpg"
+        ],
+
+        "dimensionsDetails": {
+            "layout": "grid", "details": [
+            {
+                "icon": "/img/products/puffi/details/frame-icon.svg",
+                "image": "/img/products/puffi/details/frame.jpg",
+                "title": {
+                    "en": "Hidden metal frame",
+                    "ru": "Скрытый металлокаркас"
+                },
+                "description": {
+                    "en": "The base is made of a durable 60×40 profile pipe with high‑quality protective powder coating.",
+                    "ru": "Основа из прочной профильной трубы 60×40 с качественной защитной порошковой покраской."
+                }
+            },
+            {
+                "icon": "/img/products/puffi/details/eco_material-icon.svg",
+                "image": "/img/products/puffi/details/eco_material.jpg",
+                "title": {
+                    "en": "Eco‑materials",
+                    "ru": "Эко-материалы"
+                },
+                "description": {
+                    "en": "The use of certified plywood.",
+                    "ru": "Использование сертифицированной фанеры."
+                }
+            },
+            {
+                "icon": "/img/products/duo/details/mattress-icon.svg",
+                "image": "/img/products/duo/details/mattress.jpg",
+                "title": {
+                    "en": "Taking care of the mattress",
+                    "ru": "Забота о матрасе"
+                },
+                "description": {
+                    "en": "To ensure the mattress retains its properties, a reinforced base made of MDF board is used on top of a metal frame.",
+                    "ru": "Чтобы матрас сохранял свои свойства, используется усиленное основание из МДФ-щита поверх металлокаркаса."
+                }
+            },
+            {
+                "icon": "/img/products/puffi/details/lameli_dim-icon.svg",
+                "image": "/img/products/puffi/details/lameli_dim.jpg",
+                "title": {
+                    "en": "Reliability",
+                    "ru": "Надёжность"
+                },
+                "description": {
+                    "en": "The distance between the plywood slats is no more than 5 cm.",
+                    "ru": "Расстояние между фанерными ламелями не более 5см."
+                }
+            }
+        ]
+        },
+
+        "add_description": {            
+            "items": { 
+                "en": ["- Two types of bases are available: with classic slats and a solid panel base."
+                ],
+            
+                "ru": ["- На выбор предлагается два вида основания: с классическими ламелями и сплошное щитовое основание."
+                ]
+            }
+        },
+
+        "gallery": [
+            "/img/products/puffi/gallery/Puffi-gallery-01.jpg",
+            "/img/products/puffi/gallery/Puffi-gallery-02.jpg",
+            "/img/products/puffi/gallery/Puffi-gallery-03.jpg",
+            "/img/products/puffi/gallery/Puffi-gallery-04.jpg",
+            "/img/products/puffi/gallery/Puffi-gallery-05.jpg",
+            "/img/products/puffi/gallery/Puffi-gallery-06.jpg"
+        ]
+      
+    },
+
+    {
+        "id": "ameli",
+        "name": "Ameli",
+        "collection": "indoor",
+        "category": "beds",
+        "categoryLabel": {
+            "en": "Beds",
+            "ru": "Кровати"
+        },
+        "featured": true,
+        "new": true,
+        "year": "2026",
+        "description": {
+            "en": "An elegant model in the style of soft minimalism with smooth, rounded lines. The design combines the concise aesthetics of modern interiors with well‑thought‑out ergonomics and a built‑in storage system.",
+            "ru": "Элегантная модель в стиле мягкого минимализма с плавными округлыми линиями.  Дизайн сочетает в себе лаконичную эстетику современных интерьеров с продуманной эргономикой и встроенной системой хранения."
+        },
+
+        "mainImage": "/img/products/ameli/Ameli-01.jpg",
+
+        "images": [
+            "/img/products/ameli/Ameli-01.jpg"
+        ],
+
+        "dimensionsImages": [
+            "/img/products/ameli/Ameli-dimension-front.jpg",
+            "/img/products/ameli/Ameli-dimension-side.jpg",
+            "/img/products/ameli/Ameli-dimension-top.jpg"
+        ],
+
+        "dimensionsDetails": {
+            "layout": "single", "details": [
+            {
+                "image": "/img/products/ameli/details/Ameli-cut.jpg"
+            }            
+        ]
+        },
+
+        "add_description": {            
+            "items": { 
+                "en": [
+                    "Streamlined silhouette: soft, rounded shapes of the headboard and footboard create a sense of coziness, make the structure visually light, and prevent accidental injuries.",
+                    "Lightweight lifting mechanism: smooth‑running gas struts make it easy to lift the orthopedic frame together with the mattress and hold it in the upper position.",
+                    "Spacious linen drawer: an internal niche with a partition ensures convenient separate storage of seasonal items, blankets, and bedding sets.” “Orthopedic base: a durable metal frame with wooden slats enhances the mattress’s properties and ensures proper ventilation."
+                ],
+            
+                "ru": [
+                    "Обтекаемый силуэт: Мягкие скругленные формы изголовья и изножья создают     ощущение уюта, делают конструкцию визуально легкой и предотвращают случайные травмы.",
+                    "Легкий подъемный механизм: Газлифты плавного хода позволяют без труда поднять ортопедическую раму вместе с матрасом и удерживают её в верхнем положении.",
+                    "Вместительный бельевой ящик: Внутренняя ниша с перегородкой обеспечивает удобное раздельное хранение сезонных вещей, одеял и комплектов постельного белья.",
+                    "Ортопедическое основание: Прочный металлический каркас с деревянными ламелями усиливает свойства матраса и обеспечивает правильную вентиляцию."
+                ]
+            }
+        },
+
+        "gallery": [
+            "/img/products/ameli/gallery/Ameli-gallery-01.jpg",
+            "/img/products/ameli/gallery/Ameli-gallery-02.jpg",
+            "/img/products/ameli/gallery/Ameli-gallery-03.jpg",
+            "/img/products/ameli/gallery/Ameli-gallery-04.jpg",
+            "/img/products/ameli/gallery/Ameli-gallery-05.jpg",
+            "/img/products/ameli/gallery/Ameli-gallery-06.jpg"
+        ]
+      
+    },
+
+     {
+        "id": "nova",
+        "name": "Nova",
+        "collection": "indoor",
+        "category": "ottomans",
+        "categoryLabel": {
+            "en": "Ottomans",
+            "ru": "Тахта"
+        },
+        "featured": true,
+        "new": true,
+        "year": "2026",
+        "description": {
+            "en": "Create the perfect space for relaxation and sleep! The main feature of the model is the ability to choose exactly the functionality option that will be a perfect fit for your room.",
+            "ru": "Создайте идеальное пространство для отдыха и сна! Главная особенность модели — возможность выбрать именно тот вариант с нужным функционалом, который идеально подойдет для вашей комнаты."
+        },
+
+        "mainImage": "/img/products/nova/Nova-01.jpg",
+
+        "images": [
+            "/img/products/nova/Nova-01.jpg",
+            "/img/products/nova/Nova-02.jpg",
+            "/img/products/nova/Nova-03.jpg",
+            "/img/products/nova/Nova-04.jpg"
+        ],
+
+        "dimensionsImages": [
+            "/img/products/nova/Nova-dimension-front.jpg",
+            "/img/products/nova/Nova-dimension-side.jpg",
+            "/img/products/nova/Nova-dimension-top.jpg"
+        ],
+
+        "dimensionsDetails": {
+            "layout": "grid", "details": [
+            {
+                "image": "/img/products/nova/details/nova-01.jpg",
+                "title": "Подъёмный механизм",
+                "description": "обеспечивает легкий и удобный доступ к вместительному месту для хранения. Внутри легко поместятся постельные принадлежности, подушки, одеяла или сезонные вещи."
+            },
+            {
+                "image": "/img/products/nova/details/nova-02.jpg",
+                "title": "Механизм трансформации",
+                "description": "Для увеличения спального места используется простой и надежный механизм «Дельфин» позволяет без лишних усилий трансформировать тахту в полноценное двуспальное место для ежедневного сна или приема гостей."
+            }
+        ]
+        },
+
+        "add_description": {            
+            "items": { 
+                "en": [
+                    "- There are two types of sofa beds to choose from: one with a storage niche and one with the Dolphin transformation mechanism."
+                ],
+            
+                "ru": [
+                    "- На выбор предлагается два вида тахты: с нишей для хранения и с механизмом трансформации Дельфин"
+                ]
+            }
+        },
+
+        "gallery": [
+            "/img/products/nova/gallery/Nova-gallery-01.jpg",
+            "/img/products/nova/gallery/Nova-gallery-02.jpg",
+            "/img/products/nova/gallery/Nova-gallery-03.jpg",
+            "/img/products/nova/gallery/Nova-gallery-04.jpg",
+            "/img/products/nova/gallery/Nova-gallery-05.jpg",
+            "/img/products/nova/gallery/Nova-gallery-06.jpg"
+        ]
+      
+    },
+
+    {
+        "id": "martin",
+        "name": "Martin",
+        "collection": "indoor",
+        "category": "ottomans",
+        "categoryLabel": {
+            "en": "Ottomans",
+            "ru": "Тахта"
+        },
+        "featured": true,
+        "new": true,
+        "year": "2026",
+        "description": {
+            "en": "This stylish and ergonomic corner sofa is designed for efficient use of space in a bedroom or children’s room.",
+            "ru": "Этот стильный и эргономичный угловой диван предназначен для рационального использования пространства в спальне или детской комнате."
+        },
+
+        "mainImage": "/img/products/martin/Martin-01.jpg",
+
+        "images": [
+            "/img/products/martin/Martin-01.jpg",
+            "/img/products/martin/Martin-02.jpg"
+        ],
+
+        "dimensionsImages": [
+            "/img/products/martin/Martin-dimension-front.jpg",
+            "/img/products/martin/Martin-dimension-side.jpg",
+            "/img/products/martin/Martin-dimension-top.jpg"
+        ],
+
+        "dimensionsDetails": {
+            "layout": "single", "details": [
+            {
+                "image": "/img/products/martin/details/Martin-cut.jpg"
+            }            
+        ]
+        },
+
+        "add_description": {            
+            "items": { 
+                "en": [
+                    "- The ottoman is equipped with a spacious internal drawer, which is divided into sections for convenient storage of bed linen, seasonal clothing, or toys.",
+                    "- The reliable panel base supports the mattress and prevents it from shifting."
+                ],
+            
+                "ru": [
+                    "- Тахта оснащена просторным внутренним ящиком, который разделен на секции для удобного хранения постельного белья, сезонной одежды или игрушек.",
+                    "- Надежное щитовое основание поддерживает матрас и предотвращает его cмещение. Кровать отлично комбинируется со стандартными матрасами."
+                ]
+            }
+        },
+
+        "gallery": [
+            "/img/products/martin/gallery/Martin-gallery-01.jpg",
+            "/img/products/martin/gallery/Martin-gallery-02.jpg",
+            "/img/products/martin/gallery/Martin-gallery-03.jpg",
+            "/img/products/martin/gallery/Martin-gallery-04.jpg",
+            "/img/products/martin/gallery/Martin-gallery-05.jpg",
+            "/img/products/martin/gallery/Martin-gallery-06.jpg"
+        ]
+      
+    },
+
+    {
+        "id": "oasis",
+        "name": "Oasis",
+        "collection": "indoor",
+        "category": "sofas",
+        "categoryLabel": {
+            "en": "Sofas",
+            "ru": "Кровати"
+        },
+        "featured": true,
+        "new": false,
+        "image": [
+            "/img/products/sofas//oasis/Oasis.jpg"
+        ]
+    }
+]

@@ -1,0 +1,320 @@
+@use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/mixins.scss" as *;
+
+.newCollection {
+    padding-top: 80px;
+
+    &__title {
+        margin-bottom: 30px;
+    } 
+}
+
+.collection-label {
+    text-transform: uppercase;
+}
+
+
+/* swiper-card */
+.slide {
+    &__card {
+        display: block;
+        color: inherit;
+        text-decoration: none;
+    }
+    &__image {
+        position: relative;
+        width: 100%;
+        height: min(48vw, 600px);
+        overflow: hidden;
+        background: $ui-link; 
+        cursor: default; 
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+            transition:
+                transform 1s cubic-bezier(.2, .7, .2, 1);
+        }
+    }
+    
+    &__view-large {
+        position: absolute;
+        left: 25px;
+        bottom: 25px;
+        padding: 11px 16px;
+        background: rgba(255, 255, 255, .92);
+        font-size: 9px;
+        letter-spacing: 1.5px;
+        opacity: 0;
+        cursor: pointer;
+        transform: translateY(10px);
+        transition:
+            opacity .4s ease,
+            transform .4s ease;
+        &:hover {
+            background: rgba(255, 255, 255, 0.70);
+            // background: transparent;
+            // border: rgba(0, 0, 0, 0.1) solid 1px;
+            transition:
+            font-size .4s ease;            
+        }
+    }
+
+    &__collection-info {
+        padding-top: 22px;
+        padding-bottom: 15px;
+        cursor: default;
+    }
+
+    &__collection-category {
+        display: block;    
+        margin-bottom: 9px;    
+        font-size: 12px;
+        letter-spacing: 1.8px;    
+        color: #888;
+        text-transform: uppercase;
+    }
+
+    &__collection-name {
+        margin: 0;
+        font-size: 22px;
+        font-weight: 400;
+        color: #171717;
+    }
+}
+
+.cat-title_1::before {
+    content: var(--cat-name-B);
+}
+.cat-title_2::before {
+    content: var(--cat-name-S);
+}
+
+.prod-name-Gr1::before {
+    content: var(--prod-name-Gr1);
+}
+.prod-name-Gr2::before {
+    content: var(--prod-name-Gr2);
+}
+.prod-name-Gr3::before {
+    content: var(--prod-name-Gr3);
+}
+.prod-name-Gr4::before {
+    content: var(--prod-name-Gr4);
+}
+
+.collection {
+    width: 100%;
+    padding: 120px 5vw;
+    background: #f7f6f3;
+}
+
+
+/* HEADER */
+.collection-header {
+    margin: 0 50px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.collection-label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #777;
+}
+
+.collection-header h2 {
+    margin: 0;
+    font-size: clamp(32px, 4vw, 58px);
+    font-weight: 400;
+    letter-spacing: -1.5px;
+    color: #171717;
+}
+
+
+/* SWIPER */
+.collectionSwiper {
+    width: 98%;
+    // overflow: visible;
+    // z-index: -10;
+}
+
+.collectionSwiper .swiper-slide {
+    width: calc(50% - 10px);
+    flex-shrink: 0;
+}
+
+.slide__card:hover .slide__image img {
+    transform: scale(1.045);
+}
+
+.slide__card:hover .slide__view-large {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+// увеличенное изображение для swiper
+.product-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 500;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.89);
+    padding: 40px;
+}
+
+.product-lightbox.is-active {
+    display: flex;
+}
+
+#lightboxImage {
+    display: block;
+    max-width: 91vw;
+    max-height: 81vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+// .product-lightbox__close {
+//     position: absolute;
+//     top: 20px;
+//     right: 30px;
+//     border: 0;
+//     background: transparent;
+//     color: $ui-grey;
+//     opacity: 0.7;
+//     font-size: 32px;
+//     cursor: pointer;
+//     transform: rotate(0deg);
+//     transition: transform 0.4s ease;
+//     font-weight: 200;
+//         -webkit-font-smoothing: antialiased;
+//     &:hover {
+//         transform: rotate(15deg);
+//         transition: 
+//             transform 0.4s ease;
+//         color: rgba(255, 255, 255, 0.35);
+//         }
+// }
+
+.product-lightbox__close {
+    position: absolute;
+    top: 45px;
+    right: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: #ffffffb4;
+    &-icon {
+        display: block;
+        width: 25px;
+        height: 25px;
+        transition: opacity 0.3s ease;
+        transition: transform 0.4s ease;
+    }
+}
+
+.product-lightbox__close:hover .product-lightbox__close-icon {
+    opacity: 0.6;
+    transform: rotate(15deg);
+        transition: 
+        transform 0.4s ease;
+}
+
+.product-lightbox__link {
+    position: absolute;
+    bottom: 25px;
+    color: $ui-grey;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: 200;
+    &:hover {
+        color: rgba(255, 255, 255, 0.35);
+    }
+}
+
+body.lightbox-open {
+    overflow: hidden;
+}
+
+
+
+// @media (max-width: 768px) {
+//     .product-lightbox {
+//         padding: 20px;
+//     }
+
+//     .product-lightbox>img {
+//         max-width: 95vw;
+//         max-height: 72vh;
+//     }
+
+//     .product-lightbox__close {
+//         top: 20px;
+//         right: 20px;
+//     }
+// }
+
+// // -----------------------------------
+
+// /* TABLET */
+// @media (max-width: 900px) {
+
+//     .collection {
+//         padding: 80px 30px;
+//     }
+
+//     .slide__image {
+//         height: 55vw;
+//     }
+// }
+
+/* MOBILE */
+// @media (max-width: 600px) {
+
+//     .collection {
+//         padding: 65px 20px;
+//     }
+
+//     .collection-header {
+//         align-items: flex-start;
+
+//         margin-bottom: 30px;
+//     }
+
+//     .collection-header h2 {
+//         font-size: 34px;
+//     }
+
+//     .collection-navigation button {
+//         width: 44px;
+//         height: 44px;
+//     }
+
+//     .collectionSwiper .swiper-slide {
+//         width: 100%;
+//     }
+
+//     .slide__image {
+//         height: 115vw;
+//     }
+
+//     .collection-info h3 {
+//         font-size: 18px;
+//     }
+// }

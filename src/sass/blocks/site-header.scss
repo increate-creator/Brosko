@@ -1,0 +1,359 @@
+@use "/src/sass/base/variables.scss" as *;
+
+/* =========================================================
+   BROSКO — SHARED HEADER FOR CATALOG / PRODUCT / INNER PAGES
+   Desktop: >= 1024px | Drawer: <= 1023px
+========================================================= */
+
+.brosko-header {
+  --brosko-header-height: 72px;
+  position: relative;
+  z-index: 1200;
+  font-family: Inter, sans-serif;
+
+  *,
+  *::before,
+  *::after { box-sizing: border-box; }
+
+  &__bar {
+    position: fixed;
+    inset: 0 0 auto;
+    width: 100%;
+    height: var(--brosko-header-height);
+    padding: 0 30px;
+    background: $ui-grey;
+    opacity: .98;
+    z-index: 1201;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    max-width: 1920px;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  &__left { min-width: 0; display: flex; align-items: center; }
+
+  &__nav { min-width: 0; }
+
+  &__nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: clamp(12px, 1.6vw, 24px);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__nav-item { margin: 0; padding: 0; }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 40px;
+    // color: $light;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .08em;
+    line-height: 1.2;
+    text-decoration: none;
+    text-transform: uppercase;
+    // white-space: nowrap;
+    // transition: opacity .25s ease;
+
+    // &:hover { 
+    //   opacity: .58; 
+    // }
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: clamp(150px, 16vw, 220px);
+    max-width: 100%;
+    margin: 0 auto;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: 48px;
+      object-fit: contain;
+    }
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 18px;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 28px;
+      min-height: 40px;
+      // color: $dark-grey;
+      text-decoration: none;
+      // transition: opacity .25s ease;
+
+      // &:hover { opacity: .58; }
+    }
+  }
+
+  &__toggle { display: none; }
+
+  &__overlay { display: none; }
+}
+
+body.brosko-menu-open { 
+  overflow: hidden; 
+
+  .brosko-header {
+    &__nav {
+      position: fixed;
+      top: var(--brosko-header-height);
+      left: 0;
+      width: 65%;
+      height: calc(100vh - var(--brosko-header-height));
+      height: calc(100dvh - var(--brosko-header-height));
+      padding: 38px 7vw 48px;
+      box-sizing: border-box;
+      overflow-x: hidden;
+      overflow-y: auto;
+      background: rgba(27, 27, 27, 0.65);
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      // transform: translateY(-10px);
+        transition: 
+        opacity .3s ease, 
+        // transform .3s ease, 
+        visibility .3s ease;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .brosko-header {
+    --brosko-header-height: 72px;
+
+    &__bar { 
+      padding: 0 22px; 
+    }
+
+    &__inner {
+      grid-template-columns: minmax(44px, 1fr) auto minmax(44px, 1fr);
+      gap: 12px;
+    }
+
+    &__left { grid-column: 1; grid-row: 1; }
+
+    &__logo { grid-column: 2; grid-row: 1; width: clamp(150px, 22vw, 190px); }
+
+    &__social { grid-column: 3; grid-row: 1; gap: 12px; }
+
+    &__toggle {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      min-width: 44px;
+      height: 44px;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      color: $dark-grey;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+
+      &:focus-visible { outline: 1px solid currentColor; outline-offset: 4px; }
+    }
+
+    &__toggle-label {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      clip-path: inset(50%);
+    }
+
+    &__toggle-icon {
+      position: relative;
+      display: block;
+      width: 26px;
+      height: 18px;
+
+      &::before,
+      &::after {
+        position: absolute;
+        left: 0;
+        width: 26px;
+        height: 1px;
+        background: currentColor;
+        content: "";
+        transition: top .28s ease, transform .28s ease;
+      }
+
+      &::before { top: 4px; }
+      &::after { top: 13px; }
+    }
+
+    &__toggle[aria-expanded="true"] &__toggle-icon {
+      &::before { top: 8px; transform: rotate(45deg); }
+      &::after { top: 8px; transform: rotate(-45deg); }
+    }
+
+    &__nav {
+      position: fixed;
+      top: var(--brosko-header-height);
+      left: 0;
+      width: 65%;
+      height: calc(100vh - var(--brosko-header-height));
+      height: calc(100dvh - var(--brosko-header-height));
+      padding: 38px 7vw 48px;
+      box-sizing: border-box;
+      overflow-x: hidden;
+      overflow-y: auto;
+      background: rgba(27, 27, 27, 0.65);
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transform: translateY(-50px);
+        transition: 
+        opacity .3s ease, 
+        transform .3s ease, 
+        visibility .3s ease;
+      z-index: 1003;
+    }
+
+    &__nav-list { 
+      flex-direction: column; 
+      align-items: flex-start; 
+      gap: 5px; 
+    }
+
+    &__nav-item { 
+      width: 100%; 
+    }
+
+    &__link {
+      min-height: 36px;
+      // color: #252525;
+      // font-size: clamp(18px, 3vw, 24px);
+      font-weight: 300;
+      letter-spacing: .06em;
+      &:hover {
+          color: $ui-grey;
+          font-weight: 100;
+      }
+    }
+
+    // &__overlay {
+    //   position: fixed;
+    //   inset: 0;
+    //   display: block;
+    //   width: 100%;
+    //   height: 72px;
+    //   padding: 0;
+    //   border: 0;
+    //   opacity: .97;
+    //   background: $ui-grey;
+    //   opacity: 0;
+
+    //   pointer-events: none;
+    //   transition: 
+    //     opacity .3s ease,
+    //     visibility .3s ease;
+    //   z-index: 1000;
+
+    //   &[hidden] { display: none; }
+    // }
+
+    &.is-open {
+
+      .brosko-header__bar {
+        height: 100vh;
+        height: 100dvh;
+        // background: rgba(0, 0, 0, .40);
+        opacity: 0.95;
+        backdrop-filter: blur(2px);
+        // transform: translateY(50);
+        transition:
+          opacity .3s ease,
+          transform .3s ease,
+      }
+
+      .brosko-header__inner {
+        height: 72px;
+      }
+
+      .brosko-header__nav {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateY(0);
+        transition:
+            opacity .3s ease,
+            transform .3s ease,
+            visibility .3s ease;
+      }
+
+      // .brosko-header__overlay {
+      //   height: 100vh;
+      //   height: 100dvh;
+      //   background: rgba(0, 0, 0, .40);
+      //   backdrop-filter: blur(2px);
+      //   opacity: 1;
+      //   pointer-events: auto;
+
+
+      //   // opacity: 1;
+      //   // pointer-events: auto;
+      //   // backdrop-filter: blur(0px);
+      //   // transition:
+      //   //   background .3s ease,
+      //   //   height .3s ease,
+      //   //   opacity .3s ease;
+      // }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .brosko-header {
+    &__bar { padding: 0 14px; }
+    &__inner { grid-template-columns: 44px minmax(0, 1fr) 44px; gap: 6px; }
+    &__logo { width: clamp(112px, 34vw, 155px); }
+    &__logo img { max-height: 40px; }
+    &__social { gap: 6px; }
+    &__social a { min-width: 24px; }
+    &__nav { padding: 32px 8vw 40px; }
+  }
+}
+
+@media (max-width: 360px) {
+  .brosko-header {
+    &__bar { padding-inline: 10px; }
+    &__logo { width: 108px; }
+    &__social { gap: 5px; }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .brosko-header *,
+  .brosko-header *::before,
+  .brosko-header *::after { transition-duration: .01ms !important; }
+}

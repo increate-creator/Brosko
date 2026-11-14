@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_3" data-name="Слой 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke: #231300;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        stroke-dasharray: 3.07 3.07;
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <path class="cls-3" d="M116.41,90.9l-24.24,25.11H30.21c-3.54,0-6.4-2.87-6.4-6.4V29.8c0-3.54,2.87-6.4,6.4-6.4h79.8c3.54,0,6.4,2.87,6.4,6.4v61.1Z"/>
+  <g>
+    <polyline class="cls-3" points="104.29 101.96 104.29 103.46 102.79 103.46"/>
+    <line class="cls-2" x1="99.73" y1="103.46" x2="39.95" y2="103.46"/>
+    <polyline class="cls-3" points="38.42 103.46 36.92 103.46 36.92 101.96"/>
+    <line class="cls-2" x1="36.92" y1="98.89" x2="36.92" y2="39.11"/>
+    <polyline class="cls-3" points="36.92 37.58 36.92 36.08 38.42 36.08"/>
+    <line class="cls-2" x1="41.48" y1="36.08" x2="101.26" y2="36.08"/>
+    <polyline class="cls-3" points="102.79 36.08 104.29 36.08 104.29 37.58"/>
+    <line class="cls-2" x1="104.29" y1="40.65" x2="104.29" y2="100.42"/>
+  </g>
+  <polygon class="cls-1" points="92.18 116.01 92.34 90.9 116.41 90.9 92.18 116.01"/>
+  <rect class="cls-3" x="1.12" y="1.01" width="137.76" height="137.76" rx="4.54" ry="4.54"/>
+</svg>

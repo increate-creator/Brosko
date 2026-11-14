@@ -1,0 +1,148 @@
+[
+    {
+        "id": "indoor",
+        "title": "Indoor",
+        "description": {
+            "en": "A refined collection of contemporary furniture designed for sophisticated interiors.",
+            "ru": "Изысканная коллекция современной мебели, созданная для утонченных интерьеров."
+        },
+        "subcategories": [
+            {
+                "id": "all",
+                "title": {
+                    "en": "All",
+                    "ru": "Все"
+                }
+                
+            },
+            {
+                "id": "beds",
+                "title": {
+                    "en": "Beds",
+                    "ru": "Кровати"
+                }
+            },
+            {
+                "id": "sofas",
+                "title": {
+                    "en": "Sofas",
+                    "ru": "Диваны"
+                }
+            },
+            {
+                "id": "armchairs",
+                "title": {
+                    "en": "Armchairs",
+                    "ru": "Кресла"
+                }
+            },
+            {
+                "id": "ottomans",
+                "title": {
+                    "en": "Ottomans",
+                    "ru": "Тахта"
+                }
+            },
+            {
+                "id": "chairs",
+                "title": {
+                    "en": "Chairs",
+                    "ru": "Стулья"
+                }
+            }
+
+        ]
+    },
+
+    {
+        "id": "outdoor",
+        "title": "Outdoor",
+        "description": {
+            "en": "A collection created to bring contemporary architecture and refined comfort into outdoor environments.",
+            "ru": "Коллекция, созданная для того, чтобы привнести современную архитектуру и изысканный комфорт в пространство на открытом воздухе."
+        },
+        "subcategories": [
+            {
+                "id": "all",
+                "title": {
+                    "en": "All",
+                    "ru": "Все"
+                }
+            },
+            {
+                "id": "sofas",
+                "title": {
+                    "en": "Sofas",
+                    "ru": "Диваны"
+                }
+            },
+            {
+                "id": "armchairs",
+                "title": {
+                    "en": "Armchairs",
+                    "ru": "Кресла"
+                }
+            },
+            {
+                "id": "tables",
+                "title": {
+                    "en": "Tables",
+                    "ru": "Столы"
+                }
+            },
+            {
+                "id": "chairs",
+                "title": {
+                    "en": "Chairs",
+                    "ru": "Стулья"
+                }
+            },
+            {
+                "id": "sun-loungers",
+                "title": {
+                    "en": "Sun Loungers",
+                    "ru": "Шезлонги"
+                }
+            }
+        ]
+    },
+
+    {
+        "id": "accessories",
+        "title": "Accessories",
+        "description": {
+            "en": "Objects and refined details created to complete contemporary interiors.",
+            "ru": "Предметы и изысканные детали, созданные для завершения современных интерьеров."
+        },
+        "subcategories": [
+            {
+                "id": "all",
+                "title": {
+                    "en": "All",
+                    "ru": "Все"
+                }
+            },
+            {
+                "id": "objects",
+                "title": {
+                    "en": "Objects",
+                    "ru": "Изделия"
+                }
+            },            
+            {
+                "id": "cushions",
+                "title": {
+                    "en": "Cushions",
+                    "ru": "Подушки"
+                }
+            },
+            {
+                "id": "accessories",
+                "title": {
+                    "en": "Accessories",
+                    "ru": "Аксессуары"
+                }
+            }
+        ]
+    }
+]

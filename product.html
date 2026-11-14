@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" id="metaDescription" content="Premium designer furniture">
+
+    <meta name="author" content="Leo">
+
+    <title>Product | Brosko</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Cormorant+Garamond:wght@300;400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <section class="product" id="product">
+        <div data-site-header data-page="product"></div>
+    </section>
+
+    <!-- PRODUCT PAGE -->
+    <main class="product-page" id="productPage">
+
+        <div class="container">
+
+            <!-- BREADCRUMB -->
+            <div class="breadcrumb">
+                <a href="catalog.html" data-i18n="footer.collections">
+                    Collection
+                </a>
+
+                <span>/</span>
+
+                <span id="breadcrumbProduct">—</span>
+            </div>
+
+            <!-- HERO PRODUCT -->
+            <section class="product-main">
+
+                <div class="product-gallery-overlay"></div>
+
+                <div class="product-gallery">
+
+                    <div class="product-gallery__main" id="galleryMain">
+                        <img id="mainProductImage" src="" alt="">
+                    </div>
+
+                    <div class="product-gallery__thumbs" id="galleryThumbs"></div>
+
+                </div>
+
+                <aside class="product-information">
+
+                    <div class="product-heading">
+
+                        <div class="product-category" id="productCategory">
+                            —
+                        </div>
+
+                        <h1 class="product-title" id="productName">
+                            —
+                        </h1>
+
+                    </div>
+
+                    <div class="product-description">
+                        <p id="productDescription">—</p>
+                    </div>
+
+                </aside>
+
+            </section>
+
+            <!-- DIMENSIONS & DETAILS -->
+            <section class="construction-section">
+
+                <div class="construction-header">
+
+                    <div class="section-number">01</div>
+
+                    <div>
+                        <div class="section-label" data-i18n="product.techInfo">
+                            Technical Information
+                        </div>
+
+                        <h2 data-i18n="product.dimensions">
+                            Dimensions &amp; Details
+                        </h2>
+                    </div>
+
+                </div>
+
+                <div class="construction-layout">
+
+                    <div class="dimensions-block">
+                        <div class="dimensions-gallery" id="dimensionsGallery"></div>
+                    </div>
+
+                    <div class="details-grid" id="detailsGrid"></div>
+
+                </div>
+
+            </section>
+
+            <!-- ADDITIONAL DESCRIPTION -->
+            <section class="product-add-description" id="addDescription">
+                <div class="product-add-description__list" id="addDescriptionList"></div>
+            </section>
+
+            <!-- GALLERY -->
+            <section class="photo-gallery-section">
+
+                <div class="construction-header">
+
+                    <div class="section-number">02</div>
+
+                    <div>
+                        <div class="section-label" data-i18n="product.Inspiration">
+                            Inspiration
+                        </div>
+
+                        <h2 data-i18n="product.gallery">
+                            Gallery
+                        </h2>
+                    </div>
+
+                </div>
+
+                <div class="photo-gallery" id="photoGallery"></div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <div data-site-footer></div>
+
+    <!-- MAIN SCRIPTS -->
+    <script type="module" src="/src/js/script.js"></script>
+    <script type="module" src="/src/js/app.js"></script>
+
+    <!-- PRODUCT -->
+    <script type="module" src="/src/js/product.js"></script>
+
+    <!-- SHARED COMPONENTS -->
+    <script type="module" src="/src/js/site-header-init.js"></script>
+    <script type="module" src="/src/js/site-footer-init.js"></script>
+
+    <!-- LANGUAGE -->
+    <script type="module" src="/src/js/language.js"></script>
+
+</body>
+
+</html>

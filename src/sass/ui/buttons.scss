@@ -1,0 +1,35 @@
+@use "/src/sass/base/mixins.scss" as *;
+@use "/src/sass/base/variables.scss" as *;
+
+/* header nav */
+.menu-btn-toggle {
+    @include button;
+    // width: 100px;
+    // height: 45px;
+    margin-top: -1px;
+    font-size: 13px;
+    font-weight: 100;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    z-index: 150;
+}
+
+/* topbar contact us */
+.topbar-btn-cont-toggle {
+    @include button;
+    margin-top: -1px;
+    font-size: 13px;
+    font-weight: 100;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* catalog */
+.btn {
+    @include button;
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+}

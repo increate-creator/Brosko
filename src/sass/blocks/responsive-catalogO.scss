@@ -1,0 +1,943 @@
+@use "/src/sass/base/variables.scss" as *;
+
+/* =========================================================
+   RESPONSIVE — CATALOG
+   Единственный файл адаптации всей страницы каталога.
+
+   Desktop:       >= 1024px
+   Tablet:        769px — 1023px
+   Small tablet:  601px — 768px
+   Mobile:        <= 600px
+========================================================= */
+
+
+/* =========================================================
+   TABLET + MOBILE HEADER / MENU
+   Бургер виден только при ширине до 1023px.
+========================================================= */
+
+@media screen and (max-width: 1023px) {
+
+  /* HEADER */
+  #catalog .site_header__nav-overlay {
+    height: 72px;
+  }
+
+  #catalog .site_header__wrapper {
+    height: 72px;
+    // padding: 0 22px;
+  }
+
+  #catalog .header__wrapper-nav {
+    grid-template-columns: minmax(44px, 1fr) auto minmax(44px, 1fr);
+    gap: 12px;
+  }
+
+  #catalog .header__wrapper-nav>[class*="pure-u"]:first-child {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  #catalog .header__wrapper-nav>[class*="pure-u"]:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  #catalog .header__wrapper-nav>[class*="pure-u"]:nth-child(3) {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  /* Отключаем старые варианты бургера */
+  #catalog .mobile-menu-toggle,
+  #catalog .menu-btn-toggle {
+    display: none !important;
+  }
+
+  #catalog .header-nav ul > li {
+    display: list-item;
+    visibility: visible;
+    opacity: 1;
+    width: 100%
+  }
+
+  /* BURGER BUTTON */
+ /* =========================================================
+   CATALOG BURGER — SINGLE SOURCE
+   Exactly TWO lines
+========================================================= */
+
+//  @media (max-width: 1023px) {
+
+   #catalog .catalog-menu-toggle {
+     display: inline-flex;
+     position: relative;
+
+     align-items: center;
+     justify-content: center;
+
+     width: 44px;
+     min-width: 44px;
+     height: 44px;
+
+     padding: 0;
+     margin: 0;
+
+     border: 0;
+     background: transparent;
+     box-shadow: none;
+
+    //  color: $dark-grey;
+     font-size: 0;
+     cursor: pointer;
+
+     /* Запрещаем рисовать линии на самой кнопке */
+     &::before,
+     &::after {
+       content: none !important;
+       display: none !important;
+     }
+
+     .catalog-menu-toggle__label {
+       position: absolute;
+       width: 1px;
+       height: 1px;
+       overflow: hidden;
+       clip: rect(0, 0, 0, 0);
+       white-space: nowrap;
+     }
+
+     /* Единственный элемент, который рисует линии */
+     .catalog-menu-toggle__icon {
+       position: relative;
+       display: block;
+
+       width: 26px;
+       height: 18px;
+
+       
+
+       &::before,
+       &::after {
+         content: "";
+         position: absolute;
+         left: 0;
+
+         display: block;
+         width: 26px;
+         height: 1px;
+
+         background: currentColor;
+        //  color: $light;
+         border: 0;
+         box-shadow: none;
+
+         transition:
+           top .3s ease,
+           transform .3s ease;
+       }
+
+       &::before {
+         top: 4px;
+       }
+
+       &::after {
+         top: 13px;
+       }
+     }
+
+     /* OPEN — X */
+     &[aria-expanded="true"] {
+       .catalog-menu-toggle__icon {
+         &::before {
+           top: 8px;
+           transform: rotate(45deg);
+         }
+
+         &::after {
+           top: 8px;
+           transform: rotate(-45deg);
+         }
+       }
+     }
+   }
+
+  .catalog-heading {
+    padding: 0 7vw 40px;
+      &__wrapper {
+        grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
+      }
+    }
+
+   .catalog-products {
+      padding: 0 7vw;
+    }
+  }
+
+//  @media (min-width: 1024px) {
+//    #catalog .catalog-menu-toggle {
+//      display: none !important;
+//    }
+//  }
+
+  /* =====================================================
+       MOBILE NAVIGATION DRAWER
+       По умолчанию меню закрыто.
+    ===================================================== */
+
+  #catalog .header-nav {
+    position: fixed;
+    top: 72px;
+    left: 0;
+    width: 65%;
+    max-width: none;
+    height: calc(100vh - 72px);
+    height: calc(100dvh - 72px);
+    padding: 38px 7vw 48px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: rgba(27, 27, 27, 0.65);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition:
+      opacity .3s ease,
+      transform .3s ease,
+      visibility .3s ease;
+
+    z-index: 1003;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 22px;
+
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    li {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    a,
+    button {
+      min-height: 36px;
+      font-weight: 300;
+      letter-spacing: .06em;
+    }
+  }
+
+  /* =====================================================
+       OPEN MENU STATE
+    ===================================================== */
+
+  body.catalog-menu-open {
+    overflow: hidden;
+
+    #catalog .header-nav {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transform: translateY(0);
+      backdrop-filter: blur(3px);
+    }
+
+    #catalog .site_header__nav-overlay {
+      // height: 100vh;
+      // height: 100dvh;
+
+      // background: rgba(0, 0, 0, .16);
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    #catalog .header-nav ul > li {
+      :hover {
+          color: $ui-grey;
+          font-weight: 100;
+        }
+    }
+
+    .header-nav {
+      .active {
+        color: $ui-grey;
+      }
+    }
+  }
+
+  #catalog .site_header__nav-overlay {
+    transition:
+      background .3s ease,
+      height .3s ease,
+      opacity .3s ease;
+  }
+
+  #catalog .header__icon-social {
+    gap: 12px;
+  }
+// }
+
+
+/* =========================================================
+   TABLET
+   769px — 1023px
+========================================================= */
+
+@media (min-width: 769px) and (max-width: 1023px) {
+
+  // #catalog .site_header__wrapper {
+  //   padding: 0 18px;
+  // }
+
+  #catalog .header__wrapper-nav {
+    gap: 12px;
+  }
+
+  #catalog .header__logo {
+    width: clamp(150px, 18vw, 190px);
+  }
+
+  /* CATALOG INTRO */
+  .catalog-intro {
+    margin: 120px 3vw 50px;
+
+    &__wrapper {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 35px;
+    }
+
+    &__lable {
+      .title-eyebrow {
+        font-size: 9px;
+        margin-bottom: 18px;
+      }
+
+      .title {
+        font-size: clamp(58px, 8vw, 90px);
+        letter-spacing: -4px;
+      }
+    }
+
+    &__description {
+      max-width: 380px;
+      font-size: 15px;
+    }
+  }
+
+  /* CATEGORY NAVIGATION */
+  .catalog-navigation {
+    margin-top: 35px;
+    // padding: 0 4vw;
+
+    .catalog-categories {
+      gap: 32px;
+    }
+
+    .main-category {
+      font-size: 13px;
+    }
+
+    .catalog-subcategories {
+      gap: 22px;
+      padding-top: 22px;
+    }
+  }
+
+  .catalog-heading {
+    padding: 0 6vw 40px;
+  }
+
+  /* PRODUCTS */
+  .catalog-products {
+    padding: 0 5vw 20px;
+
+    .products-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      column-gap: 18px;
+      row-gap: 40px;
+    }
+  }
+
+  .product-card {
+    &__arrow {
+      right: 16px;
+      bottom: 16px;
+    }
+
+    &__information {
+      gap: 12px;
+    }
+
+    &__name {
+      font-size: 14px;
+    }
+
+    &__category {
+      font-size: 10px;
+    }
+  }
+
+  #catalog .load-more-button {
+    margin-top: 75px;
+  }
+}
+
+
+/* =========================================================
+   SMALL TABLET
+   601px — 768px
+========================================================= */
+
+@media (min-width: 601px) and (max-width: 768px) {
+
+  .catalog-heading {
+    padding: 0 5vw 40px;
+  }
+
+  .catalog-intro {
+    margin: 110px 3vw 42px;
+
+    &__wrapper {
+      grid-template-columns: minmax(0, 1fr) minmax(300, 1fr);
+      gap: 24px;
+    }
+
+    &__lable {
+      .title-eyebrow {
+        font-size: 8px;
+        margin-bottom: 18px;
+      }
+    }
+
+    &__lable .title {
+      font-size: clamp(60px, 8vw, 70px);
+      letter-spacing: -3px;
+    }
+
+    &__description {
+      font-size: 14px;
+    }
+  }
+
+  /* CATEGORY NAVIGATION */
+  #catalog .catalog-navigation {
+    padding: 0 6vw;
+
+    .catalog-categories {
+      gap: clamp(18px, 4vw, 30px);
+    }
+
+    .catalog-subcategories {
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+  }
+
+  /* CATALOG HEADING */
+  #catalog .catalog-heading {
+    padding: 0 6vw 35px;
+
+    &__wrapper {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 20px;
+    }
+  }
+
+  .catalog-products {
+    padding: 0 5vw 20px;
+  }
+
+  .product-card {
+
+    &__information {
+      gap: 11px;
+    }
+
+    &__name {
+      font-size: 12px;
+    }
+
+    &__category {
+      font-size: 9px;
+    }
+  }
+
+  
+}
+
+
+/* =========================================================
+   MOBILE
+   <= 600px
+========================================================= */
+
+@media (max-width: 600px) {
+
+  /* HEADER */
+  #catalog .site_header__wrapper {
+    padding: 0 14px;
+  }
+
+  #catalog .header__wrapper-nav {
+    grid-template-columns: minmax(44px, 1fr) auto minmax(44px, 1fr);
+    gap: 6px;
+  }
+
+  #catalog .header__logo {
+    width: clamp(112px, 34vw, 155px);
+
+    img {
+      max-height: 40px;
+    }
+  }
+
+  #catalog .header__icon-social {
+    gap: 8px;
+
+    a {
+      min-width: 24px;
+    }
+  }
+
+  /* INTRO */
+  .catalog-intro {
+    margin: 100px 4vw 38px;
+
+    &__wrapper {
+      grid-template-columns: minmax(0, 1fr) minmax(230, 1fr);
+      gap: 18px;
+    }
+
+    &__lable {
+      .title-eyebrow {
+        font-size: 8px;
+        margin-bottom: 12px;
+      }
+
+      .title {
+        font-size: clamp(52px, 10vw, 60px);
+        letter-spacing: -2.5px;
+      }
+    }
+
+    &__description {
+      max-width: 100%;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+  }
+
+  /* CATEGORY NAVIGATION */
+  .catalog-navigation {
+    margin-top: 28px;
+    padding: 0 6vw;
+
+    .catalog-categories {
+      gap: 22px;
+      overflow-x: auto;
+      overflow-y: hidden;
+      white-space: nowrap;
+      scrollbar-width: none;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    .main-category {
+      font-size: 12px;
+    }
+
+    .catalog-subcategories {
+      display: flex;
+      gap: 18px;
+      padding-top: 18px;
+
+      overflow-x: auto;
+      overflow-y: hidden;
+
+      white-space: nowrap;
+      scrollbar-width: none;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+
+  /* CATALOG HEADING */
+  .catalog-heading {
+    padding: 0 5vw 30px;
+
+    &__wrapper {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 12px;
+    }
+  }
+
+  /* =====================================================
+       PRODUCTS — ONE CARD PER ROW
+    ===================================================== */
+
+  .catalog-products {
+    padding: 0 5vw 30px;
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      column-gap: 0;
+      row-gap: 42px;
+    }
+  }
+
+  /* PRODUCT CARD */
+  #catalog .product-card {
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+
+    &__link {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* IMAGE */
+    &__image {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 1 / .82;
+      overflow: hidden;
+      border-radius: 0;
+      background: #f1f0ee;
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 0;
+        box-shadow: none;
+        transition: transform .7s ease;
+      }
+    }
+
+    /* INFORMATION */
+    &__information {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5px;
+      width: 100%;
+      padding: 12px 0 0;
+    }
+
+    &__name {
+      margin: 0;
+      color: #171717;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.3;
+      letter-spacing: .01em;
+    }
+
+    &__category {
+      margin: 0;
+      color: #888;
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 1.4;
+      letter-spacing: .09em;
+      text-transform: uppercase;
+    }
+  }
+
+  /* LOAD MORE */
+  #catalog .catalog-load-more,
+  #catalog #loadMore {
+    margin-top: 55px;
+  }
+}
+
+@media (max-width: 500px) {
+  .catalog-intro {
+
+    &__wrapper {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   <= 425px
+========================================================= */
+
+@media (max-width: 425px) {
+
+  .catalog-intro {
+    margin: 100px 4vw 35px;
+
+    &__wrapper {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 16px;
+    }
+  }
+
+  .catalog-heading {
+    padding: 0 4vw;
+  }
+
+  .catalog-products {
+    padding: 0 4vw;
+
+    .products-grid {
+      display: grid;
+      // grid-template-columns: repeat(1, minmax(0, 1fr));
+      // column-gap: 24px;
+      row-gap: 34px;
+    }
+  }
+
+  .product-card {
+    &__image {
+      aspect-ratio: 1 / 0.85;
+    }
+    &__name {
+      font-size: 13px;
+    }
+    &__category {
+      font-size: 9px;
+    }
+    &__information {
+      gap: 16px;
+    }
+  }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   <= 380px
+========================================================= */
+
+@media (max-width: 380px) {
+
+  #catalog .site_header__wrapper {
+    padding: 0 10px;
+  }
+
+  #catalog .header__logo {
+    width: 108px;
+  }
+
+  #catalog .header__icon-social {
+    gap: 5px;
+  }
+
+  .catalog-heading__left {
+    .catalog-eyebrow {
+      margin-bottom: 4px;
+      font-size: 9px;
+      letter-spacing: 1px;
+    }
+  }
+
+  .catalog-heading__right {
+    p {
+      font-size: 14px;
+    }
+    
+  }    
+
+  /* CATALOG HEADING */
+  .catalog-heading {
+    margin-top: 40px;
+    
+    &__wrapper {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 12px;
+    }
+  }
+
+  .catalog-products {
+    // padding-right: 5vw;
+    // padding-left: 5vw;
+
+    .products-grid {
+      row-gap: 34px;
+    }
+  }
+
+  .product-card {
+    &__image {
+      aspect-ratio: 1 / .85;
+    }
+
+    &__name {
+      font-size: 13px;
+    }
+
+    &__category {
+      font-size: 9px;
+    }
+
+    &__information {
+      gap: 14px;
+    }
+  }
+}
+
+
+/* =========================================================
+   DESKTOP RESET
+   1024px AND ABOVE
+   Этот блок намеренно расположен последним.
+========================================================= */
+
+@media (min-width: 1023px) {
+
+  /* HIDE ALL BURGER VARIANTS */
+  #catalog .catalog-menu-toggle,
+  #catalog .mobile-menu-toggle,
+  #catalog .menu-btn-toggle {
+    display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+
+  /* DESKTOP NAVIGATION */
+  #catalog .header-nav {
+    position: static !important;
+    left: auto !important;
+    top: auto !important;
+
+    width: auto !important;
+    max-width: none !important;
+    height: auto !important;
+
+    padding: 0 !important;
+    overflow: visible !important;
+
+    background: transparent !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+
+    transform: none !important;
+    z-index: auto !important;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  /* HEADER OVERLAY */
+  #catalog .site_header__nav-overlay {
+    height: 80px;
+    pointer-events: none !important;
+  }
+
+  /* RESET MOBILE SCROLL LOCK */
+  body.catalog-menu-open {
+    overflow: auto;
+  }
+}
+
+/* =========================================================
+   FORCE DESKTOP NAVIGATION RESET
+   FIX: mobile menu remains open at desktop width
+========================================================= */
+
+@media (min-width: 1023px) {
+
+  /* Remove mobile menu state visually */
+  body.catalog-menu-open {
+    overflow: auto !important;
+  }
+
+  /* Override the more specific OPEN MENU STATE selector */
+  body.catalog-menu-open #catalog .header-nav,
+  #catalog body.catalog-menu-open .header-nav {
+    position: static !important;
+
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+
+    width: auto !important;
+    max-width: none !important;
+    height: auto !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+    overflow: visible !important;
+
+    background: transparent !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+
+    transform: none !important;
+
+    z-index: auto !important;
+  }
+
+  /* Desktop navigation must be horizontal */
+  body.catalog-menu-open #catalog .header-nav ul,
+  #catalog .header-nav ul {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+
+    gap: clamp(12px, 1.7vw, 26px) !important;
+
+    width: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    list-style: none !important;
+  }
+
+  #catalog .header-nav li {
+    display: list-item !important;
+    width: auto !important;
+  }
+
+  /* Hide mobile burger */
+  #catalog .catalog-menu-toggle,
+  #catalog .mobile-menu-toggle,
+  #catalog .menu-btn-toggle {
+    display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+
+  /* Reset mobile overlay */
+  body.catalog-menu-open #catalog .site_header__nav-overlay,
+  #catalog .site_header__nav-overlay {
+    height: 80px !important;
+
+    background-color: $ui-grey !important;
+    opacity: .97 !important;
+
+    pointer-events: none !important;
+  }
+}

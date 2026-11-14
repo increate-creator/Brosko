@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Brosko furniture collection" />
+    <meta name="author" content="Leo" />
+
+    <title>Brosko — Furniture Collection</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Cormorant+Garamond:wght@300;400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section class="catalog" id="catalog">
+        <div data-site-header data-page="catalog"></div>
+    </section>
+
+    <section class="catalog-content">
+        <div class="container">
+            <div class="catalog-content__wrapper-nav">
+                
+                
+            </div>
+        </div>
+    </section>
+
+
+    <main class="catalog-page">
+        <div class="container">
+
+        <!-- INTRO -->
+        <section class="catalog-intro">
+            <div class="catalog-intro__wrapper">
+
+                <div class="catalog-intro__lable">
+                    <span class="title-eyebrow" data-i18n="catalog.title1">
+                        COLLECTION 2026
+                    </span>
+                    <h1 class="title" data-i18n="catalog.title2">Furniture</h1>
+                </div>
+
+                <div class="catalog-intro__description" data-i18n="catalog.topInfo">
+                    <p>
+                        A considered collection of contemporary
+                        furniture shaped by proportion,
+                        material and timeless craftsmanship.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- CATEGORY NAVIGATION -->
+        <section class="catalog-navigation">
+            <div class="container">
+    
+                <!-- MAIN CATEGORIES -->
+                <div class="catalog-categories" id="categoryNav">    
+                    <button class="btn main-category active" data-collection="indoor" data-i18n="nav.indoor">
+                        INDOOR
+                    </button>
+    
+                    <button class="main-category" data-collection="outdoor" data-i18n="nav.outdoor">
+                        OUTDOOR
+                    </button>
+    
+                    <button class="main-category" data-collection="accessories" data-i18n="nav.accessories">
+                     ACCESSORIES
+                    </button>
+                </div>
+    
+            </div>    
+    
+            <!-- SUB CATEGORIES -->
+            <div class="catalog-subcategories" id="subcategoryList"></div>
+    
+        </section>
+
+
+        <section class="catalog-heading">
+            <div class="container">
+                <div class="catalog-heading__wrapper">
+    
+                    <div class="catalog-heading__left">    
+                        <span class="catalog-eyebrow" data-i18n="nav.collection">
+                            COLLECTION
+                        </span>
+
+                        <h2 id="catalogTitle" data-i18n="nav.indoor">
+                            Indoor
+                        </h2>    
+                    </div>
+    
+                    <div class="catalog-heading__right">    
+                        <p id="categoryDescription" data-i18n="catalog.Info">
+                            Contemporary furniture collections
+                            designed for sophisticated interiors.
+                        </p>    
+                    </div>
+                </div>
+            </div>
+        </section>       
+
+        <!-- PRODUCT GRID -->
+        <section class="catalog-products">
+            <div class="container">
+        
+                <div class="products-grid" id="productsGrid"></div>
+
+                <div class="catalog-load-more">
+                    <button type="button" id="loadMore" class="load-more-button">
+                        <span data-i18n="catalog.loadMore" data-load-more-label>LOAD MORE</span>
+                        <span class="load-more-count" data-load-more-count></span>
+                    </button>
+                </div>
+        
+                <!-- <button class="load-more" id="loadMore">
+                    LOAD MORE
+                </button>         -->
+            </div>
+        </section>        
+
+        </div>
+    </main>
+
+    <div data-site-footer></div>
+
+    <!-- Main scripts -->
+    <script type="module" src="/src/js/script.js"></script>
+    <script type="module" src="/src/js/app.js"></script>
+    
+    <!-- Shared components -->
+    <script type="module" src="/src/js/site-header-init.js"></script>
+    <script type="module" src="/src/js/site-footer-init.js"></script>
+    
+    <!-- Catalog and language -->
+    <script type="module" src="/src/js/catalog.js"></script>
+    <script type="module" src="/src/js/language.js"></script>
+
+</body>
+
+</html>

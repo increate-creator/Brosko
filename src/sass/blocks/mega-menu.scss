@@ -1,0 +1,129 @@
+/* ===========================
+   MEGA MENU
+   =========================== */
+
+@use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/mixins.scss" as *;
+
+.mega-menu {
+   position: fixed;
+   top: 45px;
+   left: 0;
+   z-index: 5;
+   width: 74%;
+   height: 77vh;
+   background-color: rgba(27, 27, 27, 0.65);
+   // border-bottom: 1px solid #707070;
+   overflow: hidden;
+   max-height: 0;
+   opacity: 0;
+   visibility: hidden;
+   transform: translateY(-15px);
+   transition:
+      max-height .55s cubic-bezier(.22, 1, .36, 1),
+      opacity .35s ease,
+      transform .45s ease,
+      visibility .35s;
+   
+   span {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 190px;
+      border-bottom: 1px solid #7c7c7c;
+   }
+
+   &__wrapper {
+      margin: 45px 100px;  
+      display: grid;
+      grid-template-columns: 1fr 0.5fr;
+   }
+   &__columnLeft {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 15px;
+   }
+   &__columnRight {
+      display: flex;
+      justify-content: end;
+      align-items: flex-end;
+   }
+
+   &-nav-overlay-open {
+      top: 0;
+      background-color: rgba(27, 27, 27, 0.85);
+   }
+}
+
+/* OPEN */
+.mega-menu.open {
+   max-height: 650px;
+   opacity: 1;
+   visibility: visible;
+   transform: translateY(0);
+   pointer-events: auto;
+   backdrop-filter: blur(3px);
+}
+
+/* блокировка прокрутки у страницы*/
+.no-scroll {
+   overflow: hidden;
+}
+
+.mega-column {
+   h3 {
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 2px;
+      margin-bottom: 24px;
+      text-transform: uppercase;
+      color: #7e7e7e;
+   }
+   ul {
+      padding: 0;
+   }
+   li {
+      list-style-type: none;
+      margin-bottom: 8px;
+      a {
+         font-size: 16px;
+         font-weight: 400;
+         line-height: 1.3;
+         letter-spacing: 1.2px;
+         color: $ui-link;
+         text-decoration: none;
+         &:hover {
+            color: $ui-grey;
+            font-weight: 100;
+         }
+      }
+   }
+   span {
+      position: relative;
+      display: block;
+      width: 45%;
+      height: 14px;
+      border-bottom: 1px solid #505050;
+   }
+   &__viewAll {
+      display: block;
+      padding-top: 10px;
+      font-size: 14px;
+      font-weight: 100;
+      line-height: 1.3;
+      letter-spacing: 1.2px;
+      color: $ui-link;
+      text-decoration: none;
+      text-transform: uppercase;      
+      &:hover {
+         color: $ui-grey;
+         font-weight: 100;
+      }
+   }
+   &__title {
+      font-size: 22px;
+      font-family: "Cormorant Garamond";
+      letter-spacing: 2px;
+      color: $ui-link;
+   }
+}

@@ -1,0 +1,37 @@
+@use "/src/sass/base/mixins.scss" as *;
+@use "/src/sass/base/variables.scss" as *;
+
+.title-h1, .title-h2 {
+    @include title;
+    font-family: "Cormorant Garamond";
+    font-size: 86px;
+    font-weight: 100;
+}
+
+.title-h3 {
+    @include title;
+    // font-family: "Garamond";
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.title-h4 {
+    @include title;
+    font-family: "Cormorant Garamond";
+    font-size: 26px;
+    font-weight: 300;
+}
+
+.text-main {
+    @include text;
+    font-family: "Manrope";
+    font-size: 18px;
+    color: $dark-grey;
+}
+
+.title-eyebrow {
+    @include title;
+    font-family: "Manrope";
+    text-transform: uppercase;
+}
